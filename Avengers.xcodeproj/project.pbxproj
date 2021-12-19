@@ -16,9 +16,9 @@
 		3165B668276C059F000AB9AA /* AvengersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3165B667276C059F000AB9AA /* AvengersTests.swift */; };
 		3165B672276C059F000AB9AA /* AvengersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3165B671276C059F000AB9AA /* AvengersUITests.swift */; };
 		3165B674276C059F000AB9AA /* AvengersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3165B673276C059F000AB9AA /* AvengersUITestsLaunchTests.swift */; };
-		3165B68A276C1D08000AB9AA /* HeroFetcherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3165B689276C1D08000AB9AA /* HeroFetcherModel.swift */; };
-		3165B68C276C22DA000AB9AA /* APIFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3165B68B276C22DA000AB9AA /* APIFetcher.swift */; };
-		3165B691276C3752000AB9AA /* HeroFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3165B690276C3752000AB9AA /* HeroFetcher.swift */; };
+		3165B693276F25D1000AB9AA /* HeroAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3165B692276F25D1000AB9AA /* HeroAPI.swift */; };
+		3165B697276F2C45000AB9AA /* GenericFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3165B696276F2C45000AB9AA /* GenericFetcher.swift */; };
+		3165B69A276F2D82000AB9AA /* HeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3165B699276F2D82000AB9AA /* HeroModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +52,9 @@
 		3165B66D276C059F000AB9AA /* AvengersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AvengersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3165B671276C059F000AB9AA /* AvengersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvengersUITests.swift; sourceTree = "<group>"; };
 		3165B673276C059F000AB9AA /* AvengersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvengersUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		3165B689276C1D08000AB9AA /* HeroFetcherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroFetcherModel.swift; sourceTree = "<group>"; };
-		3165B68B276C22DA000AB9AA /* APIFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFetcher.swift; sourceTree = "<group>"; };
-		3165B690276C3752000AB9AA /* HeroFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroFetcher.swift; sourceTree = "<group>"; };
+		3165B692276F25D1000AB9AA /* HeroAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroAPI.swift; sourceTree = "<group>"; };
+		3165B696276F2C45000AB9AA /* GenericFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericFetcher.swift; sourceTree = "<group>"; };
+		3165B699276F2D82000AB9AA /* HeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +112,8 @@
 				3165B659276C059E000AB9AA /* Assets.xcassets */,
 				3165B65B276C059E000AB9AA /* LaunchScreen.storyboard */,
 				3165B65E276C059E000AB9AA /* Info.plist */,
+				3165B698276F2D6D000AB9AA /* Model */,
+				3165B694276F2C0B000AB9AA /* Fetcher */,
 				3165B681276C1287000AB9AA /* API */,
 				3165B680276C1265000AB9AA /* Prensenters */,
 			);
@@ -146,18 +148,9 @@
 		3165B681276C1287000AB9AA /* API */ = {
 			isa = PBXGroup;
 			children = (
-				3165B686276C17D6000AB9AA /* Generic */,
-				3165B682276C12FA000AB9AA /* Fetchers */,
+				3165B692276F25D1000AB9AA /* HeroAPI.swift */,
 			);
 			path = API;
-			sourceTree = "<group>";
-		};
-		3165B682276C12FA000AB9AA /* Fetchers */ = {
-			isa = PBXGroup;
-			children = (
-				3165B68F276C36FA000AB9AA /* Heros */,
-			);
-			path = Fetchers;
 			sourceTree = "<group>";
 		};
 		3165B685276C1386000AB9AA /* Generic */ = {
@@ -167,21 +160,20 @@
 			path = Generic;
 			sourceTree = "<group>";
 		};
-		3165B686276C17D6000AB9AA /* Generic */ = {
+		3165B694276F2C0B000AB9AA /* Fetcher */ = {
 			isa = PBXGroup;
 			children = (
-				3165B68B276C22DA000AB9AA /* APIFetcher.swift */,
+				3165B696276F2C45000AB9AA /* GenericFetcher.swift */,
 			);
-			path = Generic;
+			path = Fetcher;
 			sourceTree = "<group>";
 		};
-		3165B68F276C36FA000AB9AA /* Heros */ = {
+		3165B698276F2D6D000AB9AA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3165B690276C3752000AB9AA /* HeroFetcher.swift */,
-				3165B689276C1D08000AB9AA /* HeroFetcherModel.swift */,
+				3165B699276F2D82000AB9AA /* HeroModel.swift */,
 			);
-			path = Heros;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,12 +307,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3165B691276C3752000AB9AA /* HeroFetcher.swift in Sources */,
+				3165B693276F25D1000AB9AA /* HeroAPI.swift in Sources */,
 				3165B655276C059C000AB9AA /* ViewController.swift in Sources */,
-				3165B68A276C1D08000AB9AA /* HeroFetcherModel.swift in Sources */,
-				3165B68C276C22DA000AB9AA /* APIFetcher.swift in Sources */,
 				3165B651276C059C000AB9AA /* AppDelegate.swift in Sources */,
 				3165B653276C059C000AB9AA /* SceneDelegate.swift in Sources */,
+				3165B697276F2C45000AB9AA /* GenericFetcher.swift in Sources */,
+				3165B69A276F2D82000AB9AA /* HeroModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
