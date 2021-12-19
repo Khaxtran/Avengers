@@ -9,8 +9,4 @@ import Foundation
 
 class HeroFetcher: Codable {
     
-    func fetchHero() {
-
-    }
-    
 }
