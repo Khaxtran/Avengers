@@ -16,7 +16,6 @@
 		3165B668276C059F000AB9AA /* AvengersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3165B667276C059F000AB9AA /* AvengersTests.swift */; };
 		3165B672276C059F000AB9AA /* AvengersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3165B671276C059F000AB9AA /* AvengersUITests.swift */; };
 		3165B674276C059F000AB9AA /* AvengersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3165B673276C059F000AB9AA /* AvengersUITestsLaunchTests.swift */; };
-		3165B693276F25D1000AB9AA /* HeroAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3165B692276F25D1000AB9AA /* HeroAPI.swift */; };
 		3165B697276F2C45000AB9AA /* GenericFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3165B696276F2C45000AB9AA /* GenericFetcher.swift */; };
 		3165B69A276F2D82000AB9AA /* HeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3165B699276F2D82000AB9AA /* HeroModel.swift */; };
 /* End PBXBuildFile section */
@@ -52,7 +51,6 @@
 		3165B66D276C059F000AB9AA /* AvengersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AvengersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3165B671276C059F000AB9AA /* AvengersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvengersUITests.swift; sourceTree = "<group>"; };
 		3165B673276C059F000AB9AA /* AvengersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvengersUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		3165B692276F25D1000AB9AA /* HeroAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroAPI.swift; sourceTree = "<group>"; };
 		3165B696276F2C45000AB9AA /* GenericFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericFetcher.swift; sourceTree = "<group>"; };
 		3165B699276F2D82000AB9AA /* HeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,7 +146,6 @@
 		3165B681276C1287000AB9AA /* API */ = {
 			isa = PBXGroup;
 			children = (
-				3165B692276F25D1000AB9AA /* HeroAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -307,7 +304,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3165B693276F25D1000AB9AA /* HeroAPI.swift in Sources */,
 				3165B655276C059C000AB9AA /* ViewController.swift in Sources */,
 				3165B651276C059C000AB9AA /* AppDelegate.swift in Sources */,
 				3165B653276C059C000AB9AA /* SceneDelegate.swift in Sources */,
